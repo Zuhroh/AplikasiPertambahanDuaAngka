@@ -159,7 +159,7 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
             int hasil = pertama + kedua;
             txtHasil.setText("" + hasil);
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "GAGAL MENGHITUNG!");
+            JOptionPane.showMessageDialog(null, "Gagal Menghitung Angka!", "Peringatan", 2);
         }
     }//GEN-LAST:event_btnHitungActionPerformed
 
@@ -167,7 +167,7 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
         char c = evt.getKeyChar();
             if (!Character.isDigit(c) && c != KeyEvent.VK_BACK_SPACE) {
                 evt.consume();
-                JOptionPane.showMessageDialog(null, "Masukkan hanya ANGKA!");
+                JOptionPane.showMessageDialog(null, "Masukkan Hanya Angka!", "Tidak Valid", 2);
             }
     }//GEN-LAST:event_txtPertamaKeyTyped
 
@@ -175,7 +175,7 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
         char c = evt.getKeyChar();
             if (!Character.isDigit(c) && c != KeyEvent.VK_BACK_SPACE) {
                 evt.consume();
-                JOptionPane.showMessageDialog(null, "Masukkan hanya ANGKA!");
+                JOptionPane.showMessageDialog(null, "Masukkan Hanya Angka!", "Tidak Valid", 2);
             }
     }//GEN-LAST:event_txtKeduaKeyTyped
 
